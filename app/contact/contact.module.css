@@ -1,0 +1,132 @@
+.contact {
+  margin: 100px 150px;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-right: 100px;
+}
+
+.left h1 {
+  margin-bottom: 10px;
+}
+
+.left p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.left h3 {
+  margin-bottom: 6px;
+}
+
+.right label,
+.right input,
+.right textarea {
+  display: block;
+  font-family: inherit;
+}
+
+.right label {
+  margin-bottom: 10px;
+}
+
+.right input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  outline: none;
+}
+
+.right input:focus {
+  outline: none;
+  border: 1px solid #212529;
+}
+
+.right textarea {
+  width: 300px;
+  padding: 10px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.right button {
+  padding: 10px 20px;
+  background-color: #212529;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background-color: #343a40;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    margin: 100px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .right input,
+  .right textarea {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    margin: 50px 20px;
+  }
+
+  .left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact {
+    margin: 40px 10px;
+  }
+
+  .left h1 {
+    font-size: 1.3rem;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+  }
+
+  .left h3 {
+    font-size: 1rem;
+  }
+
+  .right input,
+  .right label {
+    font-size: 0.8rem;
+  }
+  .right textarea {
+    font-size: 0.8rem;
+    height: 80px;
+  }
+
+  .right button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
