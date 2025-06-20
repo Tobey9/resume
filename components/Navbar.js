@@ -23,9 +23,9 @@ export default function Navbar() {
   return (
     <div className={styles.navbar} ref={dropdownRef}>
       <div className={styles.left}>
-        <Link href="/">
-          <h2>Toby</h2>
-        </Link>
+        <h2>
+          <Link href="/">Toby</Link>
+        </h2>
         <p>Fullstack Developer</p>
       </div>
 
