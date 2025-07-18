@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -22,8 +22,8 @@ export default function Footer() {
             </Link>
 
             <span>
-              <Link href="" target="_blank">
-                <FaXTwitter />
+              <Link href="https://github.com/Tobey9" target="_blank">
+                <FaGithub />
               </Link>
             </span>
           </p>
